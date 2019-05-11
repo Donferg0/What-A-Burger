@@ -1,0 +1,26 @@
+{
+  "name": "what-a-burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^3.0.2",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donferg0/What-A-Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donferg0/What-A-Burger/issues"
+  },
+  "homepage": "https://github.com/Donferg0/What-A-Burger#readme"
+}
