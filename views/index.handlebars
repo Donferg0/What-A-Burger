@@ -12,10 +12,10 @@
         </div>
 
         <div class="col-3 text-center">
-          <form method="POST" action="/api/burgers/" class="btn">
+          <form method="PUT" action="/api/burgers/" class="btn">
             <input type="hidden" name="burger_id" type="text" value={{this.id}}>
             <br>
-            <button type="submit" class="btn btn">
+            <button id="change-devoured" type="submit" class="btn btn">
               Devour it!</button>
           </form>
         </div>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="col-6 text center">
-      {{#each burger}}
+      {{#each data}}
       {{#if this.devoured}}
       <input class="form control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
       {{/if}}

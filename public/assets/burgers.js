@@ -1,9 +1,9 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".change-devoured").on("submit", function(event) {
+    $("#change-devoured").on("click", function(event) {
       event.preventDefault()
-      var id = $(this).data("id");
-      console.log(id)
+      var id = $(this).data("value");
+      console.log(this)
       var nowDevoured = $(this).data("newDevoured");
   
       var isDevoured = {
