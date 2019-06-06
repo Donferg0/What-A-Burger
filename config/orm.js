@@ -65,7 +65,7 @@ var orm = {
           throw err;
         }
   
-        cb(result);
+        return(result);
       });
     },
     
