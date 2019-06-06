@@ -10,7 +10,7 @@ var burger = {
   update: function(id, cb) {
     orm.update("burgers", id, cb)
   },
-
+  
   create: function(id, cb) {
     orm.create("burgers", id, cb)
   }

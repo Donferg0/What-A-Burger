@@ -1,10 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $("#change-devoured").on("click", function(event) {
-      event.preventDefault()
-      var id = $(this).data("value");
-      console.log(this)
-      var nowDevoured = $(this).data("newDevoured");
+    $(".change-devoured").on("click", function(event) {
+      // event.preventDefault()
+      var id = $(this).data("id");
+      var nowDevoured = $(this).data("nowDevoured");
+      console.log(nowDevoured)
   
       var isDevoured = {
         devoured: nowDevoured
@@ -45,6 +45,7 @@ $(function() {
       );
     });
   
+    //make delete button
     $(".delete-burger").on("click", function(event) {
       var id = $(this).data("id");
   
